@@ -20,7 +20,7 @@ class ATM
         $isValid = $amount /  min($availableBanknotes) > 1 && $amount % min($availableBanknotes) == 0;
     
         if(!$isValid){
-            throw new IncorrectAmountException('IncorrectAmountException');
+            throw new IncorrectAmountException('This ATM do not serve the denomination requested');
         }
         
         $amountModule = $amount;
