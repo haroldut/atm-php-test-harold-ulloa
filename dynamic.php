@@ -87,7 +87,7 @@ try {
     echo "\n";
 }
 
-// Call 4. Expected result: IncorrectAmountException to be thrown
+// Call 4. Expected result: [5 => 1, 10 => 1, 20 => 1, 50 => 1]
 try {
     $result4 = $atm->getBanknotes(85, [5, 10, 20, 50]);
 
